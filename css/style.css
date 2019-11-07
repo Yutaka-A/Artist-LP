@@ -1,0 +1,1292 @@
+@charset "UTF-8";
+#index .active {
+  border-bottom: 3px solid red;
+  padding-bottom: 2.5px;
+  margin-bottom: -6.5px;
+}
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  font-family: 'Estrangelo Edessa','Yu Mincho', sans-serif;
+  font-weight: 200;
+}
+
+body header {
+  position: fixed;
+  z-index: 10;
+  height: 100px;
+  width: 100%;
+  padding: 0 140px;
+  background: #394C6C;
+  opacity: 0.8;
+}
+
+body header .containerx {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body header img {
+  max-width: 50%;
+  height: auto;
+}
+
+body header .container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+body header .container2 a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+body header .menu ul li {
+  list-style: none;
+  color: #FFFFFF;
+  font-size: 16px;
+  margin-left: 30px;
+}
+
+body header .menu ul li:hover {
+  border-bottom: 3px solid red;
+  padding-bottom: 4.5px;
+  margin-bottom: -6.5px;
+}
+
+body .message {
+  height: 700px;
+  background-image: url("img/sanpashi.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: #FFF;
+}
+
+body .message .back {
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+body .message .containers {
+  height: 812px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body .message .containers h1 {
+  padding-top: 80px;
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  font-size: 80px;
+  font-weight: 200;
+  color: #F85B75;
+  text-shadow: 2px 2px 8px #FFF;
+}
+
+body .message .containers p {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+  font-size: 38px;
+  font-weight: 400;
+  color: #394C6C;
+  text-shadow: 1px 1px 8px #FFF;
+  margin-top: 40px;
+}
+
+body .message .containers .btn {
+  background-color: #394C6C;
+  border-color: #394C6C;
+  font-size: 38px;
+  padding: 17px 81px;
+  margin-top: 82px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 6px #333333;
+}
+
+body .message .containers .btn:hover {
+  opacity: 0.9;
+}
+
+body .back2 {
+  background-image: url("img/sanpashi.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+}
+
+body .back3 {
+  background-image: url("img/sanpashi.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+}
+
+body .main .card-section {
+  max-width: 100%;
+  background: #cce0ec;
+  padding: 0 125px;
+  padding-bottom: 140px;
+}
+
+body .main .card-section .title {
+  text-align: center;
+}
+
+body .main .card-section .title h2 {
+  font-weight: bold;
+  font-size: 60px;
+  padding: 68px;
+}
+
+body .main .card-section .title h2 span {
+  border-bottom: 4px solid #394C6C;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+body .main .card-section .contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body .main .card-section .contents .col-md-3, body .main .card-section .contents .col-sm-5, body .main .card-section .contents .col-xs-10 {
+  margin: 15px;
+  padding: 15px;
+}
+
+body .main .card-section .contents .item {
+  box-sizing: border-box;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(17, 51, 72, 0.2);
+  color: #3c3c3c;
+  padding: 16px 16px 28px 16px;
+  text-decoration: none;
+  height: 100%;
+}
+
+body .main .card-section .contents .item:hover {
+  opacity: 0.6;
+}
+
+body .main .card-section .contents .item img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+  background: rgba(128, 128, 128, 0.5);
+}
+
+body .main .card-section .contents .item .text {
+  height: 8rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body .main .card-section .contents .item .text h3 {
+  color: #3B4C6A;
+  font-weight: bold;
+  margin-top: 26px;
+}
+
+body .main .card-section .contents .item .text p {
+  width: 100%;
+  margin-top: 20px;
+}
+
+body .main .news-section {
+  margin: 68px 200px;
+  text-align: center;
+}
+
+body .main .news-section .title {
+  position: relative;
+}
+
+body .main .news-section .title h2 {
+  position: relative;
+  font-size: 60px;
+  color: #333333;
+  font-weight: bold;
+}
+
+body .main .news-section .title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 60px;
+  /*線の長さ*/
+  height: 4px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #394C6C;
+  /*線の色*/
+}
+
+body .main .news-section .contents {
+  display: inline-block;
+  margin: 90px auto;
+}
+
+body .main .news-section .contents .news {
+  max-width: 1000px;
+  border-top: 1px solid #000;
+  padding: 22px 0;
+}
+
+body .main .news-section .contents .news:first-child {
+  border: none;
+}
+
+body .main .news-section .contents .news ul {
+  display: flex;
+}
+
+body .main .news-section .contents .news ul:hover {
+  opacity: 0.6;
+}
+
+body .main .news-section .contents .news ul .date {
+  width: 140px;
+}
+
+body .main .news-section .contents .news ul .text {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  padding: 0 auto;
+}
+
+body .main .news-section .contents .news ul li {
+  font-size: 16px;
+  text-align: left;
+}
+
+body .main .news-section .contents .news ul li .label {
+  height: 30px;
+  width: 100px;
+  padding: 5px 18px;
+  margin: 0 30px;
+  border-radius: 6px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+body .main .news-section .contents .news ul li .label1 {
+  background: #178f27;
+  border-color: #178f27;
+}
+
+body .main .news-section .contents .news ul li .label2 {
+  background: #394C6C;
+  border-color: #394C6C;
+}
+
+body .main .news-section .contents .news ul li .label3 {
+  background: #E81919;
+  border-color: #E81919;
+}
+
+body .main .news-section .contents .more {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+}
+
+body .main .news-section .contents .more:hover {
+  opacity: 0.6;
+}
+
+body .main .news-section .contents .more a {
+  color: #E81919;
+}
+
+body .main .news-section .contents .more i {
+  position: absolute;
+  right: -15px;
+  top: 1.5px;
+}
+
+body .main .price-section {
+  background: #fffff5;
+  padding: 68px 200px;
+  text-align: center;
+}
+
+body .main .price-section .title {
+  position: relative;
+}
+
+body .main .price-section .title h2 {
+  position: relative;
+  font-size: 60px;
+  color: #333333;
+  font-weight: bold;
+}
+
+body .main .price-section .title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 60px;
+  /*線の長さ*/
+  height: 4px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #394C6C;
+  /*線の色*/
+}
+
+body .main .price-section .contents {
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+  margin: 90px auto;
+}
+
+body .main .price-section .contents .picture {
+  width: 50%;
+}
+
+body .main .price-section .contents .table {
+  margin-left: 5%;
+  width: 50%;
+  height: auto;
+}
+
+body .main .price-section .contents .table table tr {
+  background: #FFF;
+}
+
+body .main .price-section .contents .table table tr th, body .main .price-section .contents .table table tr td {
+  border: 1px solid #707070;
+}
+
+body .main .price-section .contents .table table tr th {
+  vertical-align: middle;
+  width: 20%;
+  background: #999999;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .main .price-section .contents .table table tr td {
+  background: #FFFFFF;
+  text-align: right;
+  line-height: 22px;
+}
+
+body .main .price-section .contents .table table tr td:hover {
+  opacity: 0.6;
+}
+
+body .main .price-section .contents .table table tr td span {
+  color: red;
+  display: inline-block;
+  padding-bottom: 2px;
+}
+
+body .main .price-section .contents .table p {
+  text-align: left;
+  padding-top: 20px;
+}
+
+body .main .price-section .contents .table p a {
+  color: #333333;
+  text-decoration: underline;
+}
+
+body .main .access-section {
+  padding: 68px 200px;
+  text-align: center;
+}
+
+body .main .access-section .title {
+  position: relative;
+}
+
+body .main .access-section .title h2 {
+  position: relative;
+  font-size: 60px;
+  color: #333333;
+  font-weight: bold;
+}
+
+body .main .access-section .title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 60px;
+  /*線の長さ*/
+  height: 4px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #394C6C;
+  /*線の色*/
+}
+
+body .main .access-section .contents .map {
+  padding-top: 120px;
+}
+
+body .main .access-section .contents .map .iframe-wrap {
+  background: #000;
+  position: relative;
+  padding-top: 50%;
+  /* = height ÷ width × 100 */
+}
+
+body .main .access-section .contents .map .iframe-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .main .access-section .contents .map .address {
+  color: #333333;
+  text-align: left;
+  line-height: 22px;
+}
+
+body .main .access-section .contents .map .address ul {
+  padding: 20px 20px;
+  display: inline-block;
+}
+
+body .main .access-section .contents .map .address ul li {
+  padding: 5px 0;
+}
+
+body .main .access-section .contents .btn {
+  margin-top: 20px;
+  position: relative;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 15px 58px;
+  background: #394C6C;
+  border-color: #394C6C;
+  font-weight: bold;
+}
+
+body .main .access-section .contents .btn:hover {
+  opacity: 0.6;
+}
+
+body .main .access-section .contents .btn i {
+  position: absolute;
+  top: 37%;
+  right: 5%;
+}
+
+body .main .contact-section {
+  background: #efefef;
+  margin: 0 auto;
+  padding: 68px 200px;
+  text-align: center;
+}
+
+body .main .contact-section .title {
+  position: relative;
+}
+
+body .main .contact-section .title h2 {
+  position: relative;
+  font-size: 60px;
+  color: #333333;
+  font-weight: bold;
+}
+
+body .main .contact-section .title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 60px;
+  /*線の長さ*/
+  height: 4px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #394C6C;
+  /*線の色*/
+}
+
+body .main .contact-section .center {
+  display: inline-block;
+}
+
+body .main .contact-section .center .contents {
+  background: #ffffff;
+  margin-top: 85px;
+  padding: 60px 43px;
+  max-width: 100%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+
+body .main .contact-section .center .contents .form {
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+body .main .contact-section .center .contents h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+body .main .contact-section .center .contents p {
+  font-weight: bold;
+  font-size: 14px;
+  background: #E81919;
+  color: #FFFFFF;
+  border-radius: 12px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  padding: 4px 9px 3px 9px;
+  margin-top: 6px;
+}
+
+body .main .contact-section .center .contents input, body .main .contact-section .center .contents select, body .main .contact-section .center .contents textarea {
+  width: 528px;
+  height: 60px;
+  border: 1px solid #707070;
+  padding: 19px 16px;
+  border-radius: 0;
+  margin-left: 10px;
+}
+
+body .main .contact-section .center .contents .form1 {
+  margin-top: 60px;
+}
+
+body .main .contact-section .center .contents .form3 .select-test {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent url(https://haniwaman.com/wp-content/uploads/2018/12/form-css-arrow.png) no-repeat center right 8px/16px 16px;
+  border-radius: 0;
+  color: inherit;
+  cursor: pointer;
+}
+
+body .main .contact-section .center .contents .form3 .select-test::-ms-expand {
+  display: none;
+}
+
+body .main .contact-section .center .contents .form3 .select-test:focus {
+  border: 1px solid rgba(0, 0, 0, 0.32);
+  box-shadow: none;
+  outline: none;
+}
+
+body .main .contact-section .center .contents .form4 textarea {
+  height: 240px;
+}
+
+body .main .contact-section .center .contents .form5 {
+  margin: 25px 0;
+}
+
+body .main .contact-section .center .contents .form5 label {
+  padding-right: 30px;
+}
+
+body .main .contact-section .center .contents .form5 .radio-test {
+  display: none;
+}
+
+body .main .contact-section .center .contents .form5 .radio-test + span {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0 0 2.5em;
+  position: relative;
+}
+
+body .main .contact-section .center .contents .form5 .radio-test + span:hover {
+  opacity: 0.6;
+}
+
+body .main .contact-section .center .contents .form5 .radio-test + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body .main .contact-section .center .contents .form5 .radio-test + span::after {
+  -webkit-transform: translateY(-50%);
+  background: #394C6C;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 6px;
+  opacity: 0;
+  padding: 6px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s ease 0s;
+}
+
+body .main .contact-section .center .contents .form5 .radio-test:checked + span::after {
+  opacity: 1;
+}
+
+body .main .contact-section .center .contents .form6 {
+  padding-left: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+body .main .contact-section .center .contents .form6 .sp {
+  text-decoration: underline;
+  display: inline;
+}
+
+body .main .contact-section .center .contents .form6 .check-test {
+  display: none;
+}
+
+body .main .contact-section .center .contents .form6 .check-test + span {
+  cursor: pointer;
+  display: inline-block;
+  line-height: 100%;
+  position: relative;
+}
+
+body .main .contact-section .center .contents .form6 .check-test + span:hover {
+  opacity: 0.6;
+}
+
+body .main .contact-section .center .contents .form6 .check-test + span::before {
+  -webkit-transform: translateY(-50%);
+  background: #fff;
+  border: 1px solid #707070;
+  border-radius: 2px;
+  content: "";
+  display: block;
+  height: 30px;
+  width: 30px;
+  left: -40px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+body .main .contact-section .center .contents .form6 .check-test + span::after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+  border-bottom: 3px solid #394C6C;
+  border-left: 3px solid #394C6C;
+  border-radius: px;
+  content: "";
+  display: block;
+  height: 12px;
+  width: 20px;
+  margin-top: -0.2em;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: -35px;
+  transform: translateY(-50%) rotate(-45deg);
+  transition: all 0.3s ease 0s;
+}
+
+body .main .contact-section .center .contents .form6 .check-test:checked + span::after {
+  opacity: 1;
+}
+
+body .main .contact-section .center .contents .send-btn {
+  text-align: center;
+  margin-top: 40px;
+}
+
+body .main .contact-section .center .contents .send-btn .btn {
+  position: relative;
+  border-radius: 12px;
+  font-size: 20px;
+  padding: 10px 87px;
+  background: #394C6C;
+  border-color: #394C6C;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+body .main .contact-section .center .contents .send-btn .btn:hover {
+  opacity: 0.6;
+}
+
+body .main .contact-section .center .contents .send-btn .btn i {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+body footer {
+  background: linear-gradient(to bottom, #666666, #333333);
+  height: 338px;
+  color: #FFFFFF;
+  font-size: 16px;
+  padding: 70px 150px;
+}
+
+body footer .footer-wrapping {
+  position: relative;
+}
+
+body footer .footer-wrapping .list-section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+body footer .footer-wrapping .list-section .logo {
+  max-width: 300px;
+  margin-bottom: 15px;
+}
+
+body footer .footer-wrapping .list-section .logo:hover {
+  opacity: 0.6;
+}
+
+body footer .footer-wrapping .list-section .menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+body footer .footer-wrapping .list-section .menu li {
+  padding: 15px;
+}
+
+body footer .footer-wrapping .list-section .menu li:hover {
+  opacity: 0.6;
+}
+
+body footer .footer-wrapping .list-section .color {
+  display: flex;
+}
+
+body footer .footer-wrapping .list-section .color .color1, body footer .footer-wrapping .list-section .color .color2, body footer .footer-wrapping .list-section .color .color3 {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+body footer .footer-wrapping .list-section .color .color1:hover, body footer .footer-wrapping .list-section .color .color2:hover, body footer .footer-wrapping .list-section .color .color3:hover {
+  opacity: 0.6;
+}
+
+body footer .footer-wrapping .list-section .color .color1 {
+  background: #55ACEE;
+}
+
+body footer .footer-wrapping .list-section .color .color2 {
+  background: #394C6C;
+}
+
+body footer .footer-wrapping .list-section .color .color3 {
+  background: #D93177;
+}
+
+body footer .footer-wrapping .address-section p {
+  margin: 15px 0;
+}
+
+body footer .footer-wrapping .copyright {
+  display: inline-block;
+  text-align: center;
+  padding: 90px 0 0 0;
+}
+
+body footer .footer-wrapping .top-btn {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 20px;
+  right: -150px;
+}
+
+body footer .footer-wrapping .top-btn .btn {
+  background: #394C6C;
+  border-color: #394C6C;
+  border-radius: 25%;
+}
+
+body footer .footer-wrapping .top-btn .btn:hover {
+  opacity: 0.6;
+}
+
+body footer .footer-wrapping .top-btn i {
+  color: #FFF;
+}
+
+body footer .floating {
+  position: fixed;
+  right: 8px;
+  bottom: 8px;
+  display: none;
+}
+
+body footer .floating a {
+  display: block;
+  color: #fff;
+  background: #000;
+  padding: 8px;
+  text-decoration: none;
+  opacity: 0.6;
+}
+
+body footer .floating a:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 720px) {
+  body {
+    /*　画面サイズが720px以下の場合ここの記述が適用される　*/
+  }
+  body header {
+    display: none;
+  }
+  body .message .back .containers a {
+    font-size: 26px;
+    padding: 10px 30px;
+  }
+  body .main .card-section {
+    padding: 0 0 140px 0;
+  }
+  body .main .card-section .title h2 {
+    font-size: 52px;
+  }
+  body .main .news-section {
+    margin: 68px 20px;
+  }
+  body .main .price-section {
+    padding: 68px 0;
+  }
+  body .main .price-section .contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .main .price-section .contents .table {
+    margin: 20px 40px;
+    display: block;
+    width: 90%;
+  }
+  body .main .access-section {
+    padding: 68px 20px;
+  }
+  body .main .contact-section {
+    padding: 68px 0;
+  }
+  body .main .contact-section .center {
+    width: 100%;
+    text-align: center;
+    padding: 68px 10px;
+  }
+  body .main .contact-section .center .contents .text {
+    display: block;
+  }
+  body .main .contact-section .center .contents input, body .main .contact-section .center .contents select, body .main .contact-section .center .contents textarea {
+    display: block;
+    width: 70%;
+  }
+  body footer {
+    padding: 30px;
+  }
+  body footer .footer-wrapping {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body footer .footer-wrapping .list-section {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 300px;
+  }
+  body footer .footer-wrapping .list-section .logo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body footer .footer-wrapping .list-section .menu {
+    padding-left: 5%;
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  body footer .footer-wrapping .list-section .color {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body {
+    /*　画面サイズが480px以下の場合ここの記述が適用される　*/
+  }
+  body .message {
+    width: 100%;
+    height: 812px;
+  }
+  body .message .containers h1 {
+    font-size: 42px;
+  }
+  body .message .containers p {
+    font-size: 32px;
+  }
+  body .back2, body .back3 {
+    width: 100%;
+    height: 812px;
+  }
+  body .swiper-button-prev, body .swiper-button-next {
+    display: none;
+  }
+  body .main .card-section .title h2 {
+    font-size: 44px;
+    padding: 68px 0;
+  }
+  body .main .news-section {
+    margin: 68px 0;
+    padding: 15px;
+  }
+  body .main .news-section .contents {
+    margin: 90px 0 0 0;
+  }
+  body .main .news-section .contents ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .main .news-section .contents ul li {
+    padding: 10px 5px;
+  }
+  body .main .price-section .contents .col-md-3, body .main .price-section .contents .col-sm-5, body .main .price-section .contents .col-xs-10 {
+    margin: 0;
+  }
+  body .main .price-section .contents .picture {
+    width: 360px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  body .main .price-section .contents .table {
+    margin: 20px auto;
+  }
+  body .main .price-section .contents .table p {
+    font-size: 12px;
+  }
+  body .main .access-section .contents .address {
+    font-size: 10px;
+  }
+  body .main .contact-section {
+    padding-bottom: 0;
+  }
+  body .main .contact-section .center .contents {
+    margin-top: 0;
+    padding: 0px 10px 30px 10px;
+  }
+  body .main .contact-section .center .contents .form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  body .main .contact-section .center .contents .text {
+    display: block;
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  body .main .contact-section .center .contents .text h3, body .main .contact-section .center .contents .text p {
+    display: inline;
+  }
+  body .main .contact-section .center .contents input, body .main .contact-section .center .contents select, body .main .contact-section .center .contents textarea {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+  body .main .contact-section .center .contents h3 {
+    padding-bottom: 15px;
+  }
+  body .main .contact-section .center .contents .form5 .radio-test + span {
+    padding: 0.7em 2.5em;
+  }
+  body .qanda-section {
+    padding: 68px 10px;
+  }
+  body footer {
+    height: 710px;
+  }
+  body footer .footer-wrapping .top-btn {
+    position: absolute;
+    bottom: -80px;
+    right: -30px;
+  }
+  body footer .footer-wrapping .list-section .menu li {
+    padding: 10px;
+  }
+}
+
+.js-hiraku-offcanvas-body {
+  padding: 0;
+}
+
+nav {
+  width: 100px !important;
+}
+
+nav .container {
+  padding: 0;
+}
+
+.navbar {
+  position: fixed;
+  background: transparent;
+  border-bottom: none;
+}
+
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+body {
+  padding-top: 70px;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+.list-group {
+  margin-bottom: 0;
+}
+
+.list-group-item:first-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+#sidebar {
+  display: block;
+}
+
+/*
+   * Off Canvas
+   * --------------------------------------------------
+   */
+@media screen and (min-width: 768px) {
+  #sidebar {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .js-hiraku-offcanvas {
+    display: block;
+    position: static;
+    background: none;
+  }
+  .js-hiraku-offcanvas .js-hiraku-offcanvas-sidebar {
+    position: static;
+    margin-right: 0;
+    width: auto;
+  }
+}
+
+#disco-link {
+  padding-top: 100px;
+  margin-top: -100px;
+}
+
+#news-link, #price-link, #access-link, #contact-link {
+  padding-top: 166px;
+  margin-top: -166px;
+}
+
+.qanda-section {
+  background: #fff7f7;
+  margin: 0 auto;
+  padding: 68px 200px;
+  text-align: center;
+}
+
+.qanda-section .title {
+  position: relative;
+}
+
+.qanda-section .title h2 {
+  position: relative;
+  font-size: 60px;
+  color: #333333;
+  font-weight: bold;
+}
+
+.qanda-section .title:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  /*線の上下位置*/
+  display: inline-block;
+  width: 60px;
+  /*線の長さ*/
+  height: 4px;
+  /*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  /*位置調整*/
+  background-color: #394C6C;
+  /*線の色*/
+}
+
+.qanda-section .qanda-list-item {
+  margin: 40px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  cursor: pointer;
+  text-align: left;
+}
+
+.qanda-section .qanda-list-item:first-child {
+  margin-top: 100px;
+}
+
+.qanda-section .qanda-list-item h3 {
+  font-size: 22px;
+}
+
+.qanda-section .qanda-list-item span {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  color: #ccc;
+  font-size: 22px;
+}
+
+.qanda-section .answer {
+  font-size: 16px;
+  padding: 20px 0px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  /* displayプロパティをnoneにしてください */
+  display: none;
+}
+
+.modal {
+  display: none;
+}
+
+.modal .login-modal-wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  /* display: none;を追加してください */
+}
+
+.modal .modal {
+  position: absolute;
+  top: 20%;
+  left: 34%;
+  background-color: #e6ecf0;
+  padding: 20px 0 40px;
+  border-radius: 10px;
+  width: 450px;
+  height: auto;
+  text-align: center;
+}
+
+.modal .fa-times {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: rgba(128, 128, 128, 0.46);
+  cursor: pointer;
+}
+
+.modal #signup-form, .modal #login-form {
+  width: 100%;
+}
+
+.modal #signup-form h2, .modal #login-form h2 {
+  color: #5f5d60;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+.modal #signup-form input, .modal #login-form input {
+  width: 320px;
+  margin-bottom: 20px;
+  font-size: 12px;
+  padding: 12px 12px;
+  border: 1px solid #d0d5d8;
+  border-radius: 5px;
+}
+
+.modal #submit-btn {
+  display: inline-block;
+  padding: 14px 140px;
+  background-color: #5dca88;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  margin: 10px auto;
+  cursor: pointer;
+}
